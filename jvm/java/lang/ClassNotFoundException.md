@@ -15,21 +15,20 @@ ClassNotFoundException, as the name suggests, means Java could not find your cla
 
 It throws the following exception:
 
-```
-java.lang.ClassNotFoundException: com.fasterxml.jackson.core
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:264)
-	at MainClass.main(MainClass.java:10)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-```
+	java.lang.ClassNotFoundException: com.fasterxml.jackson.core
+		at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+		at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+		at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+		at java.lang.Class.forName0(Native Method)
+		at java.lang.Class.forName(Class.java:264)
+		at MainClass.main(MainClass.java:10)
+		at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.lang.reflect.Method.invoke(Method.java:498)
+		at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+
 
 This exception happens in many different scenarios, but the most common cause is a broken Class-Path, caused by either missing files or maybe even a change in disk layout which could possibly break your Class-Path. Java looks for all the folders and subfolders in the Class-Path to find the classes. Most common solutions include:
 
