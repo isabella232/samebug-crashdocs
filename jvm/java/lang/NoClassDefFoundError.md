@@ -31,3 +31,5 @@ This creates two files, Example.class and MainExample.class. If Example.class is
 This happens when there's a library or framework being used and it "depends" on external code to work, or if there's missing class or jar files. All the .class files need to be in the right .jar files, and the .jar files inside their correct folders and inside the Class-Path. The use of a building tool (such as Maven or Gradle) is recommended to help with this problem. Some libraries (such as com.fasterxml) require external dependencies, and if they're not in the dependencies (pom.xml) or in your Class-path, this exception will be thrown.
 
 There's also a ClassNotFoundException being thrown, and that's the cause of the error.
+
+Changes
