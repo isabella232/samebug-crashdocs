@@ -2,7 +2,8 @@
 
 NoClassDefFoundError, means there's a missing transitive dependency of a .jar file that the code was compiled against. A simple example that throws the exception:
 
-    class Example {
+    class Example 
+    {
     }
 
     public class MainExample {
