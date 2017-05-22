@@ -7,7 +7,7 @@ The code ahead is an easy way to reproduce the exception, by trying to create a 
 
     Vector<String> myVector = new Vector<String>(-1);
 
-This code throws the following exception
+This code would have the following stackstrace:
 
 
     Exception in thread "main" java.lang.IllegalArgumentException: Illegal Capacity: -1
@@ -15,4 +15,6 @@ This code throws the following exception
         at java.util.Vector.<init>(Vector.java:148)
         at IllegalArgumentExample.main(IllegalArgumentExample.java:7)
 
-To fix this, try to check for negatives and illegal values before passing them to a method.
+To avoid this exception, the use of clauses to avoid negative or invalid arguments being passed to methods, specially if the argument comes from external code, is the best solution.
+
+For more information, here is the [Javadoc](https://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html) of IllegalArgumentException
