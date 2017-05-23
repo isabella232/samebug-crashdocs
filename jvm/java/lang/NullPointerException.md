@@ -16,7 +16,7 @@ A simple code that throws this exception is the following:
         public static void main(String[] args)
         {
             Obj newObject = null;
-            newObject.test;
+            newObject.test();
         }
     }
 
