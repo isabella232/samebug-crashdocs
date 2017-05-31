@@ -2,15 +2,15 @@
 
 NoClassDefFoundError, means there's a missing transitive dependency of a .jar file that the code was compiled against. A simple example that throws the exception:
 
-    class Example {
-    }
-
+```java
+class Example {
+}
     public class MainExample {
-        public static void main(String[] args) {
-            Example e = new Example();
-        }
+    public static void main(String[] args) {
+        Example e = new Example();
     }
-
+}
+```
 This creates two files, Example.class and MainExample.class. If Example.class is deleted, for example, the following exception will be thrown:
 
 ```
