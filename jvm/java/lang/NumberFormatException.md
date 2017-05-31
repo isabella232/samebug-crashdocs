@@ -3,24 +3,24 @@
 This exception is one of the most common exceptions in Java, and it happens when you're trying to convert a String into a numeric value but the string is not properly formatted for doing so.
 
 An example is the following code:
-
-    public class StringToInt
+```java
+public class StringToInt
+{
+    public static void main()
     {
-        public static void main()
+        try
         {
-            try
-            {
-                String s = "testword";
-                int i = Integer.parseInt(s);
-                System.out.println("The value is equal to: " + i);
-            }
-            catch(NumberFormatException nfe)
-            {
-                nfe.printStackTrace();
-            }
+            String s = "testword";
+            int i = Integer.parseInt(s);
+            System.out.println("The value is equal to: " + i);
+        }
+        catch(NumberFormatException nfe)
+        {
+            nfe.printStackTrace();
         }
     }
-
+}
+```
 And it would have the following stacktrace:
 
     java.lang.NumberFormatException: For input string: "testword"
